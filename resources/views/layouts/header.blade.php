@@ -12,7 +12,7 @@
 
       <ul style="display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0;">
         <li><a href="{{ url('/') }}" style="color: #1b4e0e; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#1b4e0e'">Home</a></li>
-        <li><a href="#" style="color: #1b4e0e; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#1b4e0e'">Sobre</a></li>
+        <li><a href="{{ url('/sobreNos') }}" style="color: #1b4e0e; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#1b4e0e'">Sobre Nós</a></li>
         <li><a href="#" style="color: #1b4e0e; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#1b4e0e'">Projetos</a></li>
         <li><a href="#" style="color: #1b4e0e; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#1b4e0e'">Contato</a></li>
       </ul>
