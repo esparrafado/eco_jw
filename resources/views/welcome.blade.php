@@ -72,7 +72,7 @@ body{
         'image' => asset('storage/images/example-image.jpg')
     ])
     
-     @include('segmentl', [
+    @include('segmentl', [
         'title' => 'teste',
         'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
         'image' => asset('storage/images/example-image.jpg')
@@ -84,9 +84,14 @@ body{
         'image' => asset('storage/images/example-image.jpg')
     ])
 
-     @include('segmentr', [
+    @include('segmentr', [
         'title' => 'teste',
         'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
         'image' => asset('storage/images/example-image.jpg')
     ])
+
+    <div style="height: 50px;"></div>
+
+    <!--GALERIA-->
+    @include('gallery')
 @endsection
