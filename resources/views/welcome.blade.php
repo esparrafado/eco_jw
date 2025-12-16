@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.app')
 @section('content')
 <style>
 .bg-img{
@@ -54,8 +54,6 @@ body{
 }
 
 </style>
-
-<body style="background-color:#CFE0BC;"> 
 
 
 

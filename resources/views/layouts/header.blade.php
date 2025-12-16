@@ -19,4 +19,4 @@
     </nav>
   </div>
 </header>
-@yield('content')
+
