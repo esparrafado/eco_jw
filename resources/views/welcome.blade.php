@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<body style="background-color:#CFE0BC;"> 
+
 <style>
 .bg-img{
-    height:300px;
-    background-image: url('{{ asset('storage/images/jw-igreja.jpg') }}');
+    height: 250px;
+    width: 100%;
+    position: relative;
+    background-image:
+        radial-gradient(circle at left, black 0%, transparent 70%),
+        url('{{ asset('storage/images/jw-igreja.jpg') }}');
     background-size: cover;
     background-position: center;
-    border-radius: 30px;
-    position: relative;
     overflow: hidden;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 10px;
 }
+
 
 .bg-img::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4); /* cor do fundo */
+    background: rgba(0,0,0,0.4);
 }
 
 .bg-img > *{
     position: relative;
     z-index: 1;
 }
+
+
+.Title{
+   
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.title-div{
+    font-family:sans-serif;
+    color:white; 
+    position: absolute;
+    top: 50%;
+    left: 5%; 
+    transform: translateY(-50%);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 </style>
 
+<body style="background-color:#CFE0BC;"> 
+
+
+
     <div class="bg-img">
-        <h1 style="color:white;"> Eco educa fortaleza </h1>
+        <div class='title-div'>
+            <p class="Title"> Eco educa fortaleza </p>
+            <p class="Subtitle"> As maravilhas da natureza de fortaleza, seilá mano</p>
+        </div>
     </div>
+    
 </body>
 </html>
