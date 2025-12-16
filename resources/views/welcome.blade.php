@@ -62,10 +62,34 @@ body{
 
     <div class="bg-img">
         <div class='title-div'>
-            <p class="Title"> Eco educa fortaleza </p>
+            <p class="Title"> Eco Educa Fortaleza </p>
             <p class="Subtitle"> As maravilhas da natureza de fortaleza, seilá mano</p>
         </div>
     </div>
+
+    @include('segmentr', [
+        'title' => 'Quem somos nós',
+        'content' => 'Lfffsdfsdft, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
+        'image' => asset('storage/images/example-image.jpg')
+    ])
+    
+     @include('segmentl', [
+        'title' => 'teste',
+        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
+        'image' => asset('storage/images/example-image.jpg')
+    ])
+
+    @include('segmentl', [
+        'title' => 'tedasdadsadasste',
+        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
+        'image' => asset('storage/images/example-image.jpg')
+    ])
+
+     @include('segmentr', [
+        'title' => 'teste',
+        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
+        'image' => asset('storage/images/example-image.jpg')
+    ])
     
 </body>
 </html>
