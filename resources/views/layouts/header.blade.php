@@ -1,17 +1,21 @@
-<header style="background-color: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;">
-    <nav style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; height: 64px;">
-            <div>
-                <a href="{{ url('/') }}" style="font-size: 24px; font-weight: bold; color: #111827; text-decoration: none;">
-                    {{ config('Eco Educa Fortaleza', 'Eco Educa Fortaleza') }}
-                </a>
-            </div>
-            
-            <div style="display: flex; gap: 24px;">
-                <a href="{{ url('/') }}" style="color: #374151; text-decoration: none; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
-                <a href="#" style="color: #374151; text-decoration: none; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='transparent'">About</a>
-                <a href="#" style="color: #374151; text-decoration: none; padding: 8px 12px; border-radius: 4px; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#f3f4f6'" onmouseout="this.style.backgroundColor='transparent'">Contact</a>
-            </div>
+<header style="position: sticky; top: 0; z-index: 50; width: 100%; background-color: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(229,231,235,0.4);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
+      <a href="{{ url('/') }}" style="display: flex; align-items: center; gap: 12px; text-decoration: none; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position: relative; width: 48px; height: 48px; border-radius: 50%; background-color: #f0fdf4; border: 2px solid #15803d; display: flex; align-items: center; justify-content: center;">
+          <img src="{{ asset('storage/images/Logo.png') }}" alt="Logo" style="width: 220px; height: 220px; object-fit: contain; margin-top: 12px;">
         </div>
+        <span style="font-family: serif; font-size: 30px; color: #1f2937; letter-spacing: -0.025em; font-weight: 500; padding-left: 10px">
+          Eco Educa Fortaleza
+        </span>
+      </a>
+
+      <ul style="display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0;">
+        <li><a href="{{ url('/') }}" style="color: #6b7280; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#6b7280'">Home</a></li>
+        <li><a href="#" style="color: #6b7280; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#6b7280'">Sobre</a></li>
+        <li><a href="#" style="color: #6b7280; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#6b7280'">Projetos</a></li>
+        <li><a href="#" style="color: #6b7280; text-decoration: none; transition: color 0.2s; font-size: 14px; font-weight: 500; letter-spacing: 0.025em;" onmouseover="this.style.color='#15803d'" onmouseout="this.style.color='#6b7280'">Contato</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
