@@ -56,6 +56,14 @@ body{
 </style>
 
 
+
+    <div class="bg-img">
+        <div class='title-div'>
+            <p class="Title"> Eco Educa Fortaleza </p>
+            <p class="Subtitle"> As maravilhas da natureza de fortaleza, seilá mano</p>
+        </div>
+    </div>
+
     @include('segmentr', [
         'title' => 'Quem somos nós',
         'content' => 'Lfffsdfsdft, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
