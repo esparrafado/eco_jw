@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+<link href="cdn.jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="cdn.jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
 <header style="position: sticky; top: 0; z-index: 50; width: 100%; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(229,231,235,0.4);">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
     <nav style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
