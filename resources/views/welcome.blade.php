@@ -60,13 +60,13 @@ body{
     <div class="bg-img">
         <div class='title-div'>
             <p class="Title"> Eco Educa Fortaleza </p>
-            <p class="Subtitle"> As maravilhas da natureza de fortaleza, seilá mano</p>
+            <p class="Subtitle"> A realidade da natureza de Fortaleza</p>
         </div>
     </div>
 
     @include('segmentr', [
         'title' => 'Quem somos nós',
-        'content' => 'Lfffsdfsdft, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
+        'content' => 'Somos a turma de Desenvolvimento de Sistemas 3. Neste trabalho, buscamos aplicar nossos conhecimentos de tecnologia e trabalho em equipe com o objetivo de conscientizar sobre a importância da preservação da natureza e do cuidado com o meio ambiente.',
         'image' => asset('storage/images/example-image.jpg')
     ])
     

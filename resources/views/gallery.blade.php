@@ -23,18 +23,21 @@
         display: flex;
         margin-bottom: 15px;
         transition: transform 0.5s ease;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
     }
-
+    
     .photo-item {
         min-width: 250px;
+        width: 250px;
         height: 180px;
-        margin-right: 15px;
         background-size: cover;
         background-position: center;
         border-radius: 8px;
         cursor: pointer;
         transition: transform 0.3s;
+        flex-shrink: 0;
     }
 
     .photo-item:last-child {
@@ -73,18 +76,29 @@
     <div class="gallery-container">
         @php
            $images = [
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/example-image.jpg'),
-                asset('storage/images/jw-igreja.jpg'),
+                asset('storage/images/foto1.jpeg'),
+                asset('storage/images/foto2.jpeg'),
+                asset('storage/images/foto3.jpeg'),
+                asset('storage/images/foto4.jpeg'),
+                asset('storage/images/foto5.jpeg'),
+                asset('storage/images/foto6.jpeg'),
+                asset('storage/images/foto7.jpeg'),
+                asset('storage/images/foto8.jpeg'),
+                asset('storage/images/foto9.jpeg'),
+                asset('storage/images/foto10.jpeg'),
+                asset('storage/images/foto11.jpeg'),
+                asset('storage/images/foto12.jpeg'),
+                asset('storage/images/foto13.jpeg'),
+                asset('storage/images/foto14.jpeg'),
+                asset('storage/images/foto15.jpeg'),
+                asset('storage/images/foto16.jpeg'),
+                asset('storage/images/foto17.jpeg'),
+                asset('storage/images/foto18.jpeg'),
+                asset('storage/images/foto19.jpeg'),
+                asset('storage/images/foto20.jpeg'),
+                asset('storage/images/foto21.jpeg'),
+                asset('storage/images/foto22.jpeg'),
+                asset('storage/images/foto23.jpeg'),
            ] 
         @endphp
         
@@ -105,19 +119,20 @@
     let currentPosition = 0;
 
     function moveAllRows(direction) {
-        const totalColumns = 4;
-        const visibleColumns = 3;
-        const maxPosition = totalColumns - visibleColumns;
+        const totalImages = 23;
+        const imagesPerRow = Math.ceil(totalImages / 3); // 8 imagens por linha
+        const containerWidth = document.querySelector('.gallery-container').offsetWidth;
+        const visibleImages = Math.floor(containerWidth / 265); // quantas imagens cabem na tela
+        const maxPosition = Math.max(0, imagesPerRow - visibleImages);
 
         const newPosition = currentPosition + direction;
 
-        // Para no limite sem loop
         if (newPosition < 0 || newPosition > maxPosition) {
-            return; // Não faz nada se tentar passar dos limites
+            return;
         }
 
         currentPosition = newPosition;
-        const itemWidth = 265;
+        const itemWidth = 265; // 250px + 15px gap
         const translateX = -currentPosition * itemWidth;
 
         for (let i = 0; i < 3; i++) {
@@ -125,3 +140,4 @@
         }
     }
 </script>
+
