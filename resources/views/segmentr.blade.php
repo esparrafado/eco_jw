@@ -5,7 +5,7 @@
             height: 200px;
             position:relative;
             left: 50%;
-            top: 50px;
+            margin-top: 50px;
             transform: translateX(-50%);
             display: flex;
             flex-direction: row;
