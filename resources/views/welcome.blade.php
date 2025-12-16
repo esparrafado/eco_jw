@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+@extends('layouts.header')
+@section('content')
 <style>
 .bg-img{
     height: 250px;
@@ -90,6 +89,4 @@ body{
         'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
         'image' => asset('storage/images/example-image.jpg')
     ])
-    
-</body>
-</html>
+@endsection
