@@ -17,7 +17,7 @@
             background-size: cover;
             background-position: center;
             background-image: url('{{ $image }}');
-            
+            border: 1px solid #ccc;
         }
 
 
@@ -33,6 +33,8 @@
             <p>{{ $content }}</p>
         </div>
 
-        <div class="segmentd-image"></div>
+        <div class="segmentd-image">
+            <img src="{{ $image }}" alt="{{ $title }}" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
 
     </div>

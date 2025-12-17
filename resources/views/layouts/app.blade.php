@@ -50,7 +50,7 @@
       <div class="col-md-4 mb-3">
         <h5>Nosso instagram</h5>
         <ul class="list-inline social-icons">
-          <li class="list-inline-item"><a href="https://www.instagram.com/ecoeducafortaleza/" class="text-white"><i class="bi bi-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/ecoeducafortaleza/" class="text-white"><i class="bi bi-instagram"></i>@ecoeducafortaleza</a></li>
         </ul>
       </div>
     </div>

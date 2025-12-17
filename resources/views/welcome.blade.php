@@ -67,25 +67,25 @@ body{
     @include('segmentr', [
         'title' => 'Quem somos nós',
         'content' => 'Somos a turma de Desenvolvimento de Sistemas 3. Neste trabalho, buscamos aplicar nossos conhecimentos de tecnologia e trabalho em equipe com o objetivo de conscientizar sobre a importância da preservação da natureza e do cuidado com o meio ambiente.',
-        'image' => asset('storage/images/example-image.jpg')
+        'image' => '/storage/images/fototurma.jpeg'
     ])
     
     @include('segmentl', [
-        'title' => 'teste',
-        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
-        'image' => asset('storage/images/example-image.jpg')
+        'title' => 'Sustentabilidade',
+        'content' => 'A sustentabilidade no cotidiano é essencial diante do crescimento populacional, do aumento do consumo e dos impactos ambientais. Pequenas atitudes diárias, como economizar recursos e reduzir desperdícios, contribuem para a preservação do meio ambiente e o bem-estar social.',
+        'image' => '/storage/images/sustentavel.jpg'
     ])
 
     @include('segmentl', [
-        'title' => 'tedasdadsadasste',
-        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
-        'image' => asset('storage/images/example-image.jpg')
+        'title' => 'Saúde Mental e Natureza',
+        'content' => 'A relação entre saúde mental e meio ambiente natural é apresentada como uma forma de mutualismo, na qual o ser humano influencia a natureza e, ao mesmo tempo, é profundamente influenciado por ela. Os ambientes naturais contribuem significativamente para a promoção do bem-estar psicológico.',
+        'image' => asset('storage/images/foto2.jpeg')
     ])
 
     @include('segmentr', [
-        'title' => 'teste',
-        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis at lacus hendrerit ullamcorper. Fusce laoreet augue quis ligula molestie pretium. Integer hendrerit nec risus eu consectetur. Suspendisse at eleifend quam. Nullam magna lorem, lacinia quis mi nec, hendrerit volutpat metus. Cras volutpat lacinia justo, non viverra',
-        'image' => asset('storage/images/example-image.jpg')
+        'title' => 'Preservação Ambiental',
+        'content' => 'A preservação ambiental representa o cuidado do ser humano com a natureza, sendo essencial para manter o equilíbrio dos ecossistemas. Proteger o meio ambiente garante a conservação dos recursos naturais, a biodiversidade e melhores condições de vida para as gerações atuais e futuras.',
+        'image' => asset('storage/images/foto3.jpeg')
     ])
 
     <div style="height: 50px;"></div>

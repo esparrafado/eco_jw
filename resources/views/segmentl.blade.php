@@ -17,7 +17,7 @@
             background-size: cover;
             background-position: center;
             background-image: url('{{ $image }}');
-            
+            border: 1px solid #ccc;
         }
 
 
@@ -29,7 +29,9 @@
 
     <div class='segmentl'>
 
-    <div class="segmentl-image"></div>
+    <div class="segmentl-image">
+        <img src="{{ $image }}" alt="{{ $title }}" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
         <div class='textl'>
             <h2>{{ $title }}</h2>
             <p>{{ $content }}</p>
