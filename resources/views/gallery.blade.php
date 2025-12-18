@@ -68,6 +68,43 @@
 
     .carousel-prev { left: 10px; }
     .carousel-next { right: 10px; }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        max-height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover {
+        color: #bbb;
+    }
 </style>
 
 <div class='gallery'>
@@ -105,7 +142,8 @@
         @for($row = 0; $row < 3; $row++)
         <div class="gallery-row" id="row-{{ $row }}">
             @for($i = $row; $i < count($images); $i += 3)
-            <div class="photo-item" style="background-image: url('{{ $images[$i] }}')"></div>
+            <div class="photo-item" style="background-image: url('{{ $images[$i] }}')"
+                 onclick="openModal('{{ $images[$i] }}')"></div>
             @endfor
         </div>
         @endfor
@@ -115,8 +153,29 @@
     </div>
 </div>
 
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
 <script>
     let currentPosition = 0;
+
+    function openModal(imageSrc) {
+        document.getElementById('imageModal').style.display = 'block';
+        document.getElementById('modalImage').src = imageSrc;
+    }
+
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('imageModal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
 
     function moveAllRows(direction) {
         const totalImages = 23;
