@@ -89,7 +89,7 @@ body {
             <div class="section">
                 <h3>Professora Michele Andrade</h3>
                 <div class="image-placeholder">
-                    Foto da Professora
+                    <img src="{{ asset('storage/images/micheleagrvai.jpg') }}" alt="Foto da Professora" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                 </div>
             </div>
         </div>
